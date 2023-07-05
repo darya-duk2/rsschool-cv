@@ -4,14 +4,12 @@ body {
     background-color: #f0f0f0; /* Цвет фона веб-страницы */
     color: #333; /* Цвет основного текста */
   }
-
   h1 {
     color:#a52a2a; /* Цвет заголовка */
     font-size: 24pt; /* Размер шрифта в пунктах */
     font-family: Georgia, Times, serif; /* Семейство шрифтов */
     font-weight: normal; /* Нормальное начертание текста  */
   }
-
   p {
     text-align: justify; /* Выравнивание по ширине */
     margin-left: 60px; /* Отступ слева в пикселах */
