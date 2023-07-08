@@ -1,8 +1,10 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0 ;
+  margin: 0;
   font-family: 'Open Sans', sans-serif;
+  color: #454e58;
+  font-size: 18px;
 }
 
 html {
@@ -12,32 +14,38 @@ html {
 
 .central-container {
   max-width: 1024px;
-  margin: 30px auto 30px auto;
+  margin: auto;
 }
 
-.header {
+header {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+}
+
+.image-container, .left-column {
+  background-color: #CDFCF6;
+  width: 40%;
 }
 
 .image-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 35%;
-  background-color: rgb(94, 219, 214);
+}
+
+.title-container, .right-column {
+  background-color: #FAF7F0;
+  width: 60%;
 }
 
 .title-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  width: 65%;
-  background-color: rgb(195, 218, 218);
+  justify-content: center;
 }
 
-.main {
+main {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -47,35 +55,71 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 35%;
-  background-color: rgb(94, 219, 214);
 }
 
 .right-column {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 65%;
-  background-color: rgb(195, 218, 218);
 }
 
-.footer {
+footer {
   display: flex;
-  justify-content: center;
-  background-color: aquamarine;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DDE6ED;
+  padding: 5px 80px 0 80px;
 }
 
 .photo {
   display: block;
-  margin: 30px auto 30px auto;
+  margin: 30px auto;
   width: 70%;
+  border-radius: 50%;
 }
 
-.section {
-  margin: 10px;
-  padding: 0 0 0 20px;
+section {
+  margin: 15px 15px 15px 40px;
+  padding: 0 20px 0 20px;
 }
 
+h1, h2 {
+  text-transform: uppercase;
+}
 
+.non-marked-list {
+  padding-left: 0;
+  margin-left: 30px;
+  list-style-type: none;
+  > li { position: relative; }
+}
 
+.fa {
+  position: absolute;
+  left: 15px;
+  width: 15px;
+  top: (2em / 14);
+  text-align: center;
+  &.#{$fa}-lg {
+    left: -10px + (4em / 14);
+  }
+}
 
+.marked-list {
+  margin-left: 20px;
+}
+
+h1 {
+  margin: 0 0 20px 0;
+  font-size: 36px;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.code-examples {
+  background-color: white;
+  margin: 10px 10px 0 0;
+  padding-top: 25px;
+}
